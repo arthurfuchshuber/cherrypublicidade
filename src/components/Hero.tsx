@@ -62,12 +62,12 @@ export default function Hero({ persona }: { persona: Persona }) {
         )}
 
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", paddingTop: 4 }}>
-          <div aria-hidden="true" style={{ height: 247 }} />
+          <div aria-hidden="true" style={{ height: 271 }} />
 
           <h1 className="h1" style={{ margin: 0, position: "relative", zIndex: 2, display: "flex", flexDirection: "column", alignItems: "center", width: "100%" }}>
             <span style={{ fontSize: 18, fontWeight: 500, letterSpacing: "-0.02em", color: "#CFC4C4", lineHeight: 1.35 }}>Gerando clientes qualificados para</span>
-            <span style={{ display: "block", fontSize: 44, lineHeight: 1.12, marginTop: 4, width: "100%", color: ACCENT }}>
-              anfitriões e<br />prestadores.
+            <span style={{ display: "block", fontSize: 52, lineHeight: 1.16, marginTop: 2, width: "100%", color: ACCENT }}>
+              anfitriões.
             </span>
           </h1>
           <p style={{ margin: "14px 0 0 0", maxWidth: 310, fontSize: 14, lineHeight: 1.5, color: "#9E9093" }}>
