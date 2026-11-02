@@ -1,6 +1,6 @@
 import { useState } from "react";
 import cherry from "@/assets/cherry-casa.png";
-import { ACCENT, BLIP_POS, PINGS, SLOT_WORDS, roleLabel, type Persona } from "@/lib/data";
+import { ACCENT, BLIP_POS, PINGS, roleLabel, type Persona } from "@/lib/data";
 import BlurName from "./BlurName";
 
 const MASK = "radial-gradient(ellipse 70% 70% at 50% 50%,#000 56%,transparent 100%)";
@@ -62,16 +62,12 @@ export default function Hero({ persona }: { persona: Persona }) {
         )}
 
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", paddingTop: 4 }}>
-          <div aria-hidden="true" style={{ height: 271 }} />
+          <div aria-hidden="true" style={{ height: 247 }} />
 
           <h1 className="h1" style={{ margin: 0, position: "relative", zIndex: 2, display: "flex", flexDirection: "column", alignItems: "center", width: "100%" }}>
             <span style={{ fontSize: 18, fontWeight: 500, letterSpacing: "-0.02em", color: "#CFC4C4", lineHeight: 1.35 }}>Gerando clientes qualificados para</span>
-            <span style={{ display: "block", height: "1.16em", overflow: "hidden", fontSize: 52, lineHeight: 1.16, marginTop: 2, width: "100%" }}>
-              <span className="slot">
-                {SLOT_WORDS.map((w, i) => (
-                  <span key={i} style={{ display: "block", height: "1.16em", textAlign: "center", color: ACCENT }}>{w}</span>
-                ))}
-              </span>
+            <span style={{ display: "block", fontSize: 44, lineHeight: 1.12, marginTop: 4, width: "100%", color: ACCENT }}>
+              anfitriões e<br />prestadores.
             </span>
           </h1>
           <p style={{ margin: "14px 0 0 0", maxWidth: 310, fontSize: 14, lineHeight: 1.5, color: "#9E9093" }}>
