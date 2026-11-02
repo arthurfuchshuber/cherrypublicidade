@@ -2,26 +2,13 @@ import { useState, type CSSProperties } from "react";
 import symbol from "@/assets/simbolo.png";
 import { ACCENT, KNOTS, STOP_COPY, STOP_TITLES, STOP_WHOS, type Persona } from "@/lib/data";
 
-type Props = { persona: Persona; onPersona: (p: Persona) => void };
+type Props = { persona: Persona };
 
 const ROUTE = "M60 520C60 460 280 480 280 400S90 350 90 290S270 250 270 170S300 110 290 50";
 
-export default function Rota({ persona, onPersona }: Props) {
+export default function Rota({ persona }: Props) {
   const [stop, setStop] = useState(-1);
-  const host = persona === "host";
   const copy = STOP_COPY[persona];
-
-  const tab = (active: boolean): CSSProperties => ({
-    flex: 1,
-    border: 0,
-    background: active ? "#B3122A" : "transparent",
-    color: active ? "#fff" : "#9E9093",
-    borderRadius: 999,
-    padding: "0 12px",
-    minHeight: 44,
-    fontSize: 14,
-    fontWeight: 600,
-  });
 
   const open = stop >= 0;
   const ci = Math.max(stop, 0);
@@ -39,11 +26,6 @@ export default function Rota({ persona, onPersona }: Props) {
         O caminho <span style={{ color: "#7C6F72" }}>até o cliente.</span>
       </h2>
       <p style={{ margin: "8px 0 0 0", fontSize: 16, lineHeight: 1.6, color: "#9E9093" }}>Toque em uma parada para ver os detalhes.</p>
-      <div role="group" aria-label="Escolha seu perfil" style={{ display: "flex", marginTop: 22, padding: 4, borderRadius: 999, background: "rgba(255,255,255,.06)" }}>
-        <button type="button" onClick={() => { onPersona("host"); setStop(-1); }} style={tab(host)}>Sou anfitrião</button>
-        <button type="button" onClick={() => { onPersona("prest"); setStop(-1); }} style={tab(!host)}>Sou prestador</button>
-      </div>
-
       <div className="card" style={{ marginTop: 36, borderRadius: 24, overflow: "hidden", boxShadow: "0 30px 90px rgba(179,18,42,.2)" }}>
         <div style={{ position: "relative", width: "100%", aspectRatio: "350 / 580" }}>
           <svg viewBox="0 0 350 580" preserveAspectRatio="xMidYMid slice" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", display: "block" }} aria-hidden="true">
