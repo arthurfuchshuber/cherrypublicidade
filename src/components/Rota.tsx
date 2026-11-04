@@ -20,7 +20,7 @@ export default function Rota({ persona }: Props) {
   const cherryCuida = STOP_WHOS[ci] === "Cherry";
 
   return (
-    <section id="rota" style={{ background: "#050304", padding: "64px 20px 72px 20px" }}>
+    <section id="rota" style={{ background: "#050304", padding: "72px 20px", borderTop: "1px solid rgba(255,255,255,.07)" }}>
       <div className="eyebrow" style={{ color: ACCENT }}>A rota</div>
       <h2 className="h2" style={{ margin: "16px 0 0 0", fontSize: 25, whiteSpace: "nowrap" }}>
         O caminho <span style={{ color: "#7C6F72" }}>até o cliente.</span>

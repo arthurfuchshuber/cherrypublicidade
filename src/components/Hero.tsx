@@ -55,8 +55,9 @@ export default function Hero({ persona }: { persona: Persona }) {
 
         {menu && (
           <nav style={{ position: "absolute", left: 20, right: 20, top: 76, zIndex: 5, background: "rgba(14,8,10,.97)", border: "1px solid rgba(255,255,255,.14)", borderRadius: 18, padding: 8, boxShadow: "0 30px 80px rgba(0,0,0,.7)" }}>
-            <a href="#rota" onClick={() => setMenu(false)} style={{ display: "flex", alignItems: "center", minHeight: 52, padding: "0 16px", fontSize: 16, fontWeight: 600 }}>A rota</a>
+            <a href="#diferencial" onClick={() => setMenu(false)} style={{ display: "flex", alignItems: "center", minHeight: 52, padding: "0 16px", fontSize: 16, fontWeight: 600 }}>Nosso diferencial</a>
             <a href="#painel" onClick={() => setMenu(false)} style={{ display: "flex", alignItems: "center", minHeight: 52, padding: "0 16px", fontSize: 16, fontWeight: 600, borderTop: "1px solid rgba(255,255,255,.08)" }}>Painel semanal</a>
+            <a href="#rota" onClick={() => setMenu(false)} style={{ display: "flex", alignItems: "center", minHeight: 52, padding: "0 16px", fontSize: 16, fontWeight: 600, borderTop: "1px solid rgba(255,255,255,.08)" }}>A rota</a>
             <a href="#caminho" onClick={() => setMenu(false)} style={{ display: "flex", alignItems: "center", minHeight: 52, padding: "0 16px", fontSize: 16, fontWeight: 600, borderTop: "1px solid rgba(255,255,255,.08)" }}>Monte seu caminho</a>
           </nav>
         )}

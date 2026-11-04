@@ -78,6 +78,10 @@ export default function Painel({ persona }: { persona: Persona }) {
           </div>
         </div>
       </div>
+      <a className="btn-p btn-fx" href="#caminho" style={{ margin: "28px auto 0 auto", width: "fit-content", background: "#B3122A", color: "#fff", fontWeight: 600, fontSize: 15, lineHeight: 1, textAlign: "center", borderRadius: 999, height: 42, minHeight: 42, padding: "0 24px", display: "flex", alignItems: "center", justifyContent: "center", gap: 10, boxShadow: "0 8px 22px rgba(179,18,42,.4)" }}>
+        Montar o meu caminho
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+      </a>
     </section>
   );
 }
