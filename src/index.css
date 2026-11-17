@@ -45,3 +45,33 @@ html{scroll-behavior:smooth}
 input,select{font-family:'Inter',system-ui,sans-serif}
 input:focus,select:focus{outline:2px solid #E5566B;outline-offset:1px}
 button{font-family:'Inter',system-ui,sans-serif;cursor:pointer}
+/* ===== Desktop (≥ 900px) ===== */
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px}
+.desk .h1{font-weight:600;letter-spacing:-0.05em;line-height:1.1}
+.desk .h2{font-weight:600;letter-spacing:-0.045em;line-height:1.12}
+.desk .eyebrow{font-size:12px}
+.desk .card{border-radius:20px}
+.desk .btn-p{transition:transform .2s,box-shadow .2s}
+.desk .btn-p:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(179,18,42,.6) !important}
+.desk .btn-p:active{transform:none}
+.btn-g{transition:background .2s}
+.btn-g:hover{background:rgba(255,255,255,.08) !important}
+.navl{color:#B9ACAE;transition:color .2s}
+.navl:hover{color:#fff}
+.opt{transition:border-color .2s,background .2s}
+.opt:hover{border-color:rgba(229,86,107,.6) !important}
+.btn-glass{display:inline-flex;align-items:center;gap:16px;height:58px;padding:0 10px 0 30px;border-radius:999px;background:rgba(255,255,255,.08);color:#fff;font-size:16px;font-weight:600;line-height:1}
+.btn-glass .gc{width:38px;height:38px;border-radius:50%;background:#B3122A;display:flex;align-items:center;justify-content:center;box-shadow:0 0 18px rgba(229,86,107,.7)}
+.desk .btn-fx{animation:glowpd 2.8s ease-in-out infinite}
+@keyframes glowpd{0%,100%{box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 14px 40px rgba(179,18,42,.32)}50%{box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 16px 52px rgba(229,86,107,.55)}}
+.dust{position:absolute;width:3px;height:3px;border-radius:50%;background:rgba(255,230,230,.75);animation:tw 4s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:.95}}
+.flow{animation:flow 1.4s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-32}}
+.desk .blip{width:10px;height:10px;box-shadow:0 0 16px 4px rgba(229,86,107,.9)}
+.desk .fl{animation-name:fld}
+@keyframes fld{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.desk .halo{animation-name:halod}
+@keyframes halod{0%{box-shadow:0 0 0 0 rgba(229,86,107,.7)}100%{box-shadow:0 0 0 24px rgba(229,86,107,0)}}
+.desk .pinb{animation-name:pinbd}
+@keyframes pinbd{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}

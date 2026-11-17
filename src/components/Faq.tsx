@@ -1,28 +1,5 @@
 import { useState } from "react";
-import { ACCENT } from "@/lib/data";
-
-const ITEMS: [string, string][] = [
-  [
-    "Por que o lead da Cherry custa mais que um lead de R$ 5?",
-    "Porque o foco é qualidade, não volume. O formulário filtra região, tipo e quantidade de imóveis, então chega até você só quem tem interesse real. Na semana 24–30/10, 10 de 15 leads queriam iniciar imediatamente.",
-  ],
-  [
-    "Como sei que o lead é qualificado?",
-    "Cada contato passa pelo filtro do formulário antes de chegar até você. Depois, você sinaliza a qualidade de cada lead e a Cherry ajusta a campanha na semana seguinte.",
-  ],
-  [
-    "Preciso ter equipe comercial?",
-    "Não. Você pode atender os leads sozinho(a) ou com a sua equipe. No diagnóstico, você conta como é o seu atendimento e o caminho é montado a partir dele.",
-  ],
-  [
-    "Como acompanho os resultados?",
-    "Pelo painel semanal, com investimento, leads gerados, custo por lead e interesse imediato, e pelo relatório semanal com o que entrou e o que mudou.",
-  ],
-  [
-    "O que acontece depois do diagnóstico?",
-    "A Cherry fala com você pelo WhatsApp para apresentar o caminho montado para o seu perfil.",
-  ],
-];
+import { ACCENT, FAQ_ITEMS } from "@/lib/data";
 
 export default function Faq() {
   const [open, setOpen] = useState(0);
@@ -35,7 +12,7 @@ export default function Faq() {
       <p style={{ margin: "8px 0 0 0", fontSize: 16, lineHeight: 1.6, color: "#B9ACAE" }}>O que mais perguntam antes de começar.</p>
 
       <div style={{ marginTop: 36, border: "1px solid rgba(255,255,255,.14)", borderRadius: 22, background: "#0A0507", padding: "0 18px", overflow: "hidden" }}>
-        {ITEMS.map(([q, a], i) => {
+        {FAQ_ITEMS.map(([q, a], i) => {
           const isOpen = open === i;
           return (
             <div key={q} style={i ? { borderTop: "1px solid rgba(255,255,255,.08)" } : undefined}>

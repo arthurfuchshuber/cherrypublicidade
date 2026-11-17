@@ -1,25 +1,5 @@
-import type { Persona } from "@/lib/data";
-import Hero from "@/components/Hero";
-import Diferencial from "@/components/Diferencial";
-import Rota from "@/components/Rota";
-import Painel from "@/components/Painel";
-import Ciclo from "@/components/Ciclo";
-import Faq from "@/components/Faq";
-import Caminho from "@/components/Caminho";
-import Footer from "@/components/Footer";
+import Landing from "@/components/Landing";
 
 export default function App() {
-  const persona: Persona = "host";
-  return (
-    <div className="sans" style={{ width: "100%", maxWidth: 480, margin: "0 auto", background: "#050304", color: "#F5F0EB", overflow: "hidden" }}>
-      <Hero persona={persona} />
-      <Diferencial />
-      <Painel persona={persona} />
-      <Rota persona={persona} />
-      <Ciclo />
-      <Faq />
-      <Caminho persona={persona} />
-      <Footer />
-    </div>
-  );
+  return <Landing />;
 }
