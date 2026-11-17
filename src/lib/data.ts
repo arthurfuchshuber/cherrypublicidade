@@ -87,3 +87,46 @@ export const GOALS: Record<Persona, string[]> = {
   prest: ["Conseguir mais clientes na minha região", "Expandir para novas cidades", "Fechar contratos recorrentes"],
 };
 export const STRUCTS = ["Atendo os leads sozinho(a)", "Tenho equipe comercial", "Opero em várias cidades"];
+
+// ===== Desktop =====
+export const BLIP_POS_D: [number, number][] = [[24, 19], [36, 12], [48, 7], [60, 11], [70, 6], [80, 17], [16, 18], [54, 18], [42, 19]];
+
+export const FEED_D: Lead[] = [
+  L("Marcos", "Silveira", "Studio até 35 m² · Campo Belo · SP", false),
+  L("Camila", "Rezende", "Apartamento +2 quartos · Ipiranga · SP", true),
+  L("Ricardo", "Moreira", "Casa em condomínio · Santana · SP", false),
+  L("Juliana", "Prado", "Studio até 35 m² · Vila Romana · SP", true),
+];
+
+export const PINGS_D: Lead[] = [
+  L("Eduardo", "Figueiredo", "Studio até 35 m² · Jardim São Paulo · SP", false),
+  L("Beatriz", "Cardoso", "Apartamento +2 quartos · Liberdade · SP", true),
+  L("Thiago", "Albuquerque", "Casa em rua pública · Centro · SP", false),
+  L("Renata", "Carvalho", "Casa em condomínio · Ipiranga · SP", true),
+];
+
+export const STOP_POS_D: [number, number][] = [[7.5, 80.6], [30, 61.3], [53.3, 48.4], [75, 54.8], [92.5, 21]];
+
+export const KPI_SPARK = [
+  "M0 24 L14 20 L28 22 L42 15 L56 17 L70 10 L84 12 L100 4",
+  "M0 26 L14 22 L28 18 L42 20 L56 12 L70 14 L84 7 L100 5",
+  "M0 6 L14 9 L28 8 L42 14 L56 12 L70 18 L84 17 L100 24",
+  "M0 20 L14 22 L28 16 L42 17 L56 11 L70 13 L84 6 L100 8",
+];
+
+export const CYCLE_D = [
+  { n: "01 / LEITURA", t: "Leitura dos números", d: "Investimento, leads, custo por lead e qualidade dos contatos." },
+  { n: "02 / AJUSTE", t: "Otimização", d: "Ajustes em criativos, públicos e orçamento com base nos dados." },
+  { n: "03 / RELATÓRIO", t: "Relatório semanal", d: "Resumo claro do que entrou, do que mudou e do que vem a seguir." },
+  { n: "04 / ALINHAMENTO", t: "Feedback dos leads", d: "Você sinaliza a qualidade e a Cherry ajusta a campanha na sequência." },
+];
+
+export const GOALS_D = ["Captar mais imóveis para a minha gestão", "Expandir para uma nova região", "Aumentar o meu portfólio de Airbnb."];
+
+export const FAQ_ITEMS: [string, string][] = [
+  ["Por que o lead da Cherry custa mais que um lead de R$ 5?", "Porque o foco é qualidade, não volume. O formulário filtra região, tipo e quantidade de imóveis, então chega até você só quem tem interesse real. Na semana 24–30/10, 10 de 15 leads queriam iniciar imediatamente."],
+  ["Como sei que o lead é qualificado?", "Cada contato passa pelo filtro do formulário antes de chegar até você. Depois, você sinaliza a qualidade de cada lead e a Cherry ajusta a campanha na semana seguinte."],
+  ["Preciso ter equipe comercial?", "Não. Você pode atender os leads sozinho(a) ou com a sua equipe. No diagnóstico, você conta como é o seu atendimento e o caminho é montado a partir dele."],
+  ["Como acompanho os resultados?", "Pelo painel semanal, com investimento, leads gerados, custo por lead e interesse imediato, e pelo relatório semanal com o que entrou e o que mudou."],
+  ["O que acontece depois do diagnóstico?", "A Cherry fala com você pelo WhatsApp para apresentar o caminho montado para o seu perfil."],
+];
